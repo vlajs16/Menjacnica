@@ -9,6 +9,17 @@ public class Kurs {
 	private double kupovniKurs;
 	private double srednjiKurs;
 	
+	public Kurs() {
+		
+	}
+	
+	public Kurs(GregorianCalendar datum, double prodajniKurs, double kupovniKurs, double srednjiKurs) {
+		this.setDatum(datum);
+		this.setProdajniKurs(prodajniKurs);
+		this.setKupovniKurs(kupovniKurs);
+		this.setSrednjiKurs(srednjiKurs);
+	}
+	
 	
 	@Override
 	public String toString() {

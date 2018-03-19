@@ -75,6 +75,7 @@ public class Valuta {
 			throw new RuntimeException("Kursevi su null");
 		this.kursevi = kursevi;
 	}
+
 	
 	
 }
