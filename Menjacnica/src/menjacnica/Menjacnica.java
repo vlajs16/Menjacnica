@@ -14,6 +14,8 @@ public class Menjacnica implements MenjacnicaInterfejs {
 	@Override
 	public void dodavanjeKursa(GregorianCalendar datum, Valuta valuta, double prodajniKurs, double kupovniKurs,
 			double srednjiKurs) {
+		if(datum.equals(null)) return;
+		if(valuta.equals(null)) return;
 
 		Kurs novi = new Kurs(datum, prodajniKurs, kupovniKurs, srednjiKurs);
 
