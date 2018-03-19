@@ -12,8 +12,11 @@ public class Valuta {
 	
 	@Override
 	public String toString() {
-		return nazivValute + " (" + skraceniNaziv +")" + "\n"
-				+ kursevi.get(kursevi.size()-1).toString();
+		if(kursevi.equals(null) || kursevi.isEmpty())
+			return nazivValute + " (" + skraceniNaziv +")";
+		else return nazivValute + " (" + skraceniNaziv +")" + "\n"
+		+ kursevi.get(kursevi.size()-1).toString();
+		
 	}
 	
 	
