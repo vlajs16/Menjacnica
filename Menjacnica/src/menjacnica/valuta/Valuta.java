@@ -51,18 +51,28 @@ public class Valuta {
 		return nazivValute;
 	}
 	public void setNazivValute(String nazivValute) {
+		if(nazivValute.equals(null))
+			throw new RuntimeException("Naziv valute je NULL");
+		if(nazivValute.isEmpty())
+			throw new RuntimeException("Naziv valute je prazan string");
 		this.nazivValute = nazivValute;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv.equals(null))
+			throw new RuntimeException("Skraceni naziv valute je NULL");
+		if(skraceniNaziv.isEmpty())
+			throw new RuntimeException("Skraceni naziv valute je prazan string");
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public ArrayList<Kurs> getKursevi() {
 		return kursevi;
 	}
 	public void setKursevi(ArrayList<Kurs> kursevi) {
+		if(kursevi.equals(null))
+			throw new RuntimeException("Kursevi su null");
 		this.kursevi = kursevi;
 	}
 	
